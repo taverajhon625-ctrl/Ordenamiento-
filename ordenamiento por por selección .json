@@ -1,0 +1,21 @@
+def selection_sort(lista):
+    n = len(lista)
+        
+            # Recorrer toda la lista
+                for i in range(n):
+                        # Encontrar el valor mínimo en lo que queda de la lista desordenada
+                                indice_minimo = i
+                                        for j in range(i + 1, n):
+                                                    if lista[j] < lista[indice_minimo]:
+                                                                    indice_minimo = j
+                                                                            
+                                                                                    # Intercambiar el mínimo encontrado con el primer elemento de la parte desordenada
+                                                                                            lista[i], lista[indice_minimo] = lista[indice_minimo], lista[i]
+
+                                                                                            # Lista de prueba (puedes pegar aquí tus números anteriores)
+                                                                                            numeros = [7, 1434, 2701, 4394, 3642, 4426, 8896, 8532, 4327, 8098]
+
+                                                                                            print("Lista original:", numeros)
+                                                                                            selection_sort(numeros)
+                                                                                            print("Lista ordenada:", numeros)
+                                                                                            
